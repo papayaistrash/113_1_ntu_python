@@ -1,0 +1,61 @@
+/* 
+#imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  max-width: 200px;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 14px;
+  color: #333;
+} */
+
+
+/* styles.css */
+
+/* 全域樣式 */
+html, body {
+  height: 100%;
+  width: 300px; /* 您可以調整這個值 */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* 圖片容器 */
+#imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px; /* 最大寬度，可根據需要調整 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+/* 圖片 */
+img {
+  max-width: 100%; /* 圖片寬度不超過容器寬度 */
+  height: auto; /* 保持圖片比例 */
+  margin-bottom: 20px;
+}
+
+/* 文字 */
+p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 媒體查詢：針對不同螢幕大小調整樣式 */
+@media (max-width: 768px) {
+  #imageContainer {
+    max-width: 90%;
+  }
+  img {
+    max-width: 90%;
+  }
+  p {
+    font-size: 14px;
+  }
+}

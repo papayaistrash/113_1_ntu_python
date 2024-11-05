@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "論文圖片收集工具",
+  "version": "0.5",
+  "description": "收集網頁上的圖片和相關說明，製作人：法律司法一葉方叡",
+  "permissions": ["contextMenus", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
